@@ -1,12 +1,22 @@
-let t = document.querySelector("#task");
-let t2 = document.querySelector("#task2");
-let add = document.querySelector("#add");
-let para = document.querySelector("#para");
 
-add.addEventListener('click',function(){
-    var sum += parseInt(t.value)+parseInt(t2.value);
-    para.innerHTML = parseInt(sum);
+var input = document.querySelector("#input");
+var addBtn = document.querySelector("#btn");
+var list = document.querySelector("#list");
 
+addBtn.addEventListener('click',function(){
+  var p = document.createElement("p");
+  p.innerText = input.value;
+  list.appendChild(p);
+  input.value = "";
+
+  p.addEventListener("click", function () {
+    p.style.textDecoration = "line-through";
+  });
+  p.addEventListener("dblclick", function () {
+    list.removeChild(p);
+  });
 })
 
-document.querySelector.
+const d = new Date();
+
+document.getElementById("date").innerHTML = d.toDateString();
