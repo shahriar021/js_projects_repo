@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #ffbf69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main{
+    width: 50%;
+    height: 50%;
+    background-color: #ff9f1c;
+    border-radius: 90px;
+    align-items: center;
+    
+    
+}
+
+#lgimg{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+    height: 100px;
+}
+
+#lgimg img{
+    width: 100px;
+    height: 100px;
+    border-radius: 1000%;
+}
+#lgtext{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:150px;
+    margin: 0px 5px ;
+}
+
+#btn{
+    width: 75%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#ffd500;
+    border-radius: 90px;
+    text-align: center;
+    margin: 0px 85px ;
+}
